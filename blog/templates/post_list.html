@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog de Wael</title>
+  </head>
+  <body>
+    <h1>Entrades del blog</h1>
+    {% for post in posts %}
+      <div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <p><em>{{ post.published_date }}</em></p>
+      </div>
+    {% endfor %}
+  </body>
+</html>
